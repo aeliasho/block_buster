@@ -3,7 +3,7 @@
 set -o errexit
 
 bundle install
-bundle exec rails assets:precompile
+#bundle exec rails assets:precompile
 bundle exec rails assets:clean
 
 # If you're using a Free instance type, you need to
@@ -11,3 +11,4 @@ bundle exec rails assets:clean
 # Uncomment the following line:
 
 # bundle exec rails db:migrate
+bundle exec rails db:create db:migrate db:seed
